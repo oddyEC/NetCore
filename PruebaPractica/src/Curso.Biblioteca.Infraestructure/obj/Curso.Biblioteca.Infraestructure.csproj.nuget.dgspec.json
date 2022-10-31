@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Infraestructure\\Curso.Biblioteca.Infraestructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\Curso.Biblioteca.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\Curso.Biblioteca.Domain.csproj",
+        "projectName": "Curso.Biblioteca.Domain",
+        "projectPath": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\Curso.Biblioteca.Domain.csproj",
+        "packagesPath": "C:\\Users\\dimarque\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dimarque\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Infraestructure\\Curso.Biblioteca.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Infraestructure\\Curso.Biblioteca.Infraestructure.csproj",
+        "projectName": "Curso.Biblioteca.Infraestructure",
+        "projectPath": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Infraestructure\\Curso.Biblioteca.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\dimarque\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dimarque\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\Curso.Biblioteca.Domain.csproj": {
+                "projectPath": "C:\\Users\\dimarque\\OneDrive - Banco Pichincha C.A\\Escritorio\\NetCore\\PruebaPractica\\src\\Curso.Biblioteca.Domain\\Curso.Biblioteca.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
