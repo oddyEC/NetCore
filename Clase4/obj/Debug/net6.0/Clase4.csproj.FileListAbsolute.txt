@@ -1,0 +1,15 @@
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\bin\Debug\net6.0\Clase4.exe
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\bin\Debug\net6.0\Clase4.deps.json
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\bin\Debug\net6.0\Clase4.runtimeconfig.json
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\bin\Debug\net6.0\Clase4.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\bin\Debug\net6.0\Clase4.pdb
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.csproj.AssemblyReference.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.AssemblyInfoInputs.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.AssemblyInfo.cs
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.csproj.CoreCompileInputs.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\refint\Clase4.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.pdb
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\Clase4.genruntimeconfig.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\Clase4\obj\Debug\net6.0\ref\Clase4.dll

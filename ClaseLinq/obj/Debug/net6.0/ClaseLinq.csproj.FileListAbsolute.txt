@@ -1,0 +1,15 @@
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\bin\Debug\net6.0\ClaseLinq.exe
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\bin\Debug\net6.0\ClaseLinq.deps.json
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\bin\Debug\net6.0\ClaseLinq.runtimeconfig.json
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\bin\Debug\net6.0\ClaseLinq.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\bin\Debug\net6.0\ClaseLinq.pdb
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.csproj.AssemblyReference.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.AssemblyInfoInputs.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.AssemblyInfo.cs
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.csproj.CoreCompileInputs.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\refint\ClaseLinq.dll
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.pdb
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ClaseLinq.genruntimeconfig.cache
+C:\Users\dimarque\OneDrive - Banco Pichincha C.A\Escritorio\NetCore\ClaseLinq\obj\Debug\net6.0\ref\ClaseLinq.dll
