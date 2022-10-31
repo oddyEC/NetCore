@@ -21,7 +21,8 @@ builder.Services.AddTransient<IMarcaRepository, MarcaRepository>();
 builder.Services.AddTransient<IMarcaAppService, MarcaAppService>();
 builder.Services.AddTransient<ITipoProductoRepository, TipoProductoRepository>();
 builder.Services.AddTransient<ITipoProductoService, TipoProductoAppService>();
-
+builder.Services.AddTransient<IProductoRepository, ProductoRepository>();
+builder.Services.AddTransient<IProductoAppService, ProductoAppService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

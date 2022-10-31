@@ -12,20 +12,52 @@ namespace Curso.ComercioElectronico.Application
         {
             this.repository = repository;
         }
-        public async Task<ProductoDto> CreateAsync(ProductoCrearActualizarDto marca)
+        public async Task<ProductoDto> CreateAsync(ProductoCrearActualizarDto productoDto)
         {
+            //Reglas Validaciones... 
+            var existeNombreProducto = await repository.ExisteNombre(productoDto.Nombre);
+            if (existeNombreProducto)
+            {
+                throw new ArgumentException($"Ya existe una marca con el nombre {productoDto.Nombre}");
+            }
 
+            //Mapeo Dto => Entidad
+            var producto = new Producto();
+            producto.Nombre = productoDto.Nombre;
+
+            //Persistencia objeto
+            producto = await repository.AddAsync(producto);
+            //await unitOfWork.SaveChangesAsync();
+
+            //Mapeo Entidad => Dto
+            var productoCreado = new ProductoDto();
+            productoCreado.Nombre = producto.Nombre;
+            productoCreado.Id = producto.Id;
+
+            //TODO: Enviar un correo electronica... 
+
+            return productoCreado;
         }
 
-        public Task<bool> DeleteAsync(int marcaId)
+        public async Task<bool> DeleteAsync(int productoId)
         {
+            //Reglas Validaciones... 
+            var producto = await repository.GetByIdAsync(productoId);
+            if (producto == null)
+            {
+                throw new ArgumentException($"La marca con el id: {productoId}, no existe");
+            }
 
+            repository.Delete(producto);
+            //await unitOfWork.SaveChangesAsync();
+
+            return true;
         }
 
         public ListaPaginada<ProductoDto> GetAll(int limit = 10, int offset = 0)
         {
             var consulta = repository.GetAllIncluding(x => x.Marca,
-            x => x.TipoProducto);
+                                                        x => x.TipoProducto);
 
             //Lista 
             var consultaListaProductosDto = repository.GetAllIncluding(x => x.Marca,
@@ -53,12 +85,59 @@ namespace Curso.ComercioElectronico.Application
 
                                              }
                                             );
-                
+            var resultado = new ListaPaginada<ProductoDto>();
+            resultado.Total = total;
+            resultado.Lista = listaProductosDto.ToList();
+
+            return resultado;
         }
 
-        public Task UpdateAsync(int id, ProductoCrearActualizarDto marca)
+        public Task<ProductoDto> GetByIdAsync(int id)
         {
+            var consulta = repository.GetAll();
+            consulta = consulta.Where(x => x.Id == id);
+            var listaProductosDto = consulta
+                                           .Select(
+                                            x => new ProductoDto()
+                                            {
+                                                Id = x.Id,
+                                                Caducidad = x.Caducidad,
+                                                //Utilizar propiedad navegacion,
+                                                //para obtener información de una clase relacionada
+                                                Marca = x.Marca.Nombre,
+                                                MarcaId = x.MarcaId,
+                                                Nombre = x.Nombre,
+                                                Observaciones = x.Observaciones,
+                                                Precio = x.Precio,
+                                                //Utilizar propiedad navegacion,
+                                                // para obtener informacion de una clase relacionada
+                                                TipoProducto = x.TipoProducto.Nombre,
+                                                TipoProductoId = x.TipoProductoId
 
+                                            }
+                                           );
+            return Task.FromResult(listaProductosDto.SingleOrDefault());
         }
+
+        public async Task UpdateAsync(int id, ProductoCrearActualizarDto productoDto)
+        {
+            var producto = await repository.GetByIdAsync(id);
+            if (producto == null)
+            {
+                throw new ArgumentException($"El producto con el id: {id}, no existe");
+            }
+            var existeNombreProducto = await repository.ExisteNombre(productoDto.Nombre, id);
+            if (existeNombreProducto)
+            {
+                throw new ArgumentException($"Ya existe una marca con el nombre {producto.Nombre}");
+            }
+            //mapeo Dto => Entidad
+            producto.Nombre = productoDto.Nombre;
+            await repository.UpdateAsync(producto);
+
+            return;
+        }
+
+
     }
 }
